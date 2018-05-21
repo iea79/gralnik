@@ -1,25 +1,22 @@
 /* Global variables */
 /* ======================================================================== */
-$main_font_family:								"Open Sans";
+$main_font_family:								"Gotham Pro";
 $main_color:									#000;
 $main_line_height:								1.2;
-$main_font_size:								16px;
+$main_font_size:								1em;
 
-$container_width:								900px;
+$container_width:								87.5em;
 
 $footer_height: 								auto;
 
 // Color collection for elements
-$color_primary:									#7b8287;
-$color_success:									#36a566;
-$color_info:									#03a9f4;
-$color_warning:									#fca33e;
-$color_danger:									#ff1a1a;
+$color_primary:									#56c2e5;
+$color_success:									#fcb615;
+$color_info:									#9aa4a8;
+$color_warning:									#df6917;
+$color_danger:									#e30613;
 $color_withe:									#ffffff;
-
-$green:											$color_success;
-$yellow:										$color_warning;
-$withe:											$color_withe;
+$color_valid:									#009640;
 
 $el-colors: (
 	primary: $color_primary, // color for .element__primary
@@ -40,38 +37,38 @@ $grid_padding:									20px;
 // Input variables
 
 // Input color
-$input_color:									$main_color;
-$input_bg_color:								#fff;
-$input_border_color:							#ddd;
-$input_placeholder_color:						#ddd;
+$input_color:									#252525;
+$input_bg_color:								$color_withe;
+$input_border_color:							#e6e6e6;
+$input_placeholder_color:						$input_color;
 
 // Input hover color
-$input_hover_color:								#fff;
-$input_hover_bg_color:							#fff;
-$input_hover_border_color:						#ddd;
-$input_hover_placeholder_color:					#ddd;
+$input_hover_color:								$input_color;
+$input_hover_bg_color:							$input_bg_color;
+$input_hover_border_color:						$input_border_color;
+$input_hover_placeholder_color:					$input_placeholder_color;
 
 // Input focus color
-$input_focus_color:								#fff;
-$input_focus_bg_color:							#fff;
-$input_focus_border_color:						#ddd;
-$input_focus_placeholder_color:					#ddd;
+$input_focus_color:								$input_color;
+$input_focus_bg_color:							$input_bg_color;
+$input_focus_border_color:						$input_border_color;
+$input_focus_placeholder_color:					$input_placeholder_color;
 
 // Input disabled color
-$input_disabled_color:							#fff;
+$input_disabled_color:							$input_color;
 $input_disabled_bg_color:						#ccc;
-$input_disabled_border_color:					#ccc;
+$input_disabled_border_color:					$input_border_color;
 $input_disabled_placeholder_color:				#fff;
 
 // Input error color
-$input_error_color:								red;
-$input_error_bg_color:							#fff;
-$input_error_border_color:						red;
-$input_error_placeholder_color:					red;
+$input_error_color:								$color_danger;
+$input_error_bg_color:							$input_bg_color;
+$input_error_border_color:						$input_border_color;
+$input_error_placeholder_color:					$color_danger;
 
 // Button variables
-$btn_default_bg_color:				 			#ddd;
-$btn_default_text_color:                        $main_color;
+$btn_default_bg_color:				 			$color_success;
+$btn_default_text_color:                        rgba(#141414, .9);
 $btn_contrast_text_color:                       $color_withe;
 $btn_default_bg_color_hover:					#ccc;
 

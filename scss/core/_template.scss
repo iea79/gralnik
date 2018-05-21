@@ -5,6 +5,55 @@
     height: auto !important;
     height: 100%;
     margin: 0 auto (-$footer_height) auto; // отрицательный нижний отступ на высоту футера
+    &_success {
+    	display: table;
+    	width: 100%;
+    	text-align: center;
+    	background: url('../img/success-bg.jpg') no-repeat center center;
+    	background-size: cover;
+    	color: #fff;
+    	.header {
+    		padding-top: 4.2em;
+    		text-align: center;
+    		&__logo {
+    			float: none;
+    			margin-right: 0;
+    		}
+    	}
+    	&_in {
+    		display: table-cell;
+    		vertical-align: middle;
+    	}
+    	h2 {
+    		max-width: 7em;
+    		display: block;
+    		font-size: 5.1em;
+    		margin: 2.2em auto 0.5em;
+    		text-transform: uppercase;
+    	}
+    	p {
+    		font-size: 1.5em;
+    		margin-bottom: 3.2em;
+    	}
+    	.btn {
+    		padding: 1.6em;
+    		width: 18em;
+    		font-size: 0.9em;
+    		color: #fff;
+    		letter-spacing: 0.02em;
+    		font-weight: 500;
+    		&:before,&:after {
+    			display: none;
+    		}
+    		&:before {
+    		}
+    		&:after {
+    		}
+    	}
+    }
+    @media (max-width: 767px) {
+        overflow: hidden;
+    }
 }
 
 /* Middle
@@ -25,17 +74,5 @@
 	@include columns(4, 20px, 300px);
 }
 
-/* Footer
- ----------------------------------------------------------------------------- */
-.footer {
-	position: relative;
-	height: $footer_height;
-	background: #BFF08E;
-	@extend %clear_all;
-	.container_center {
-		padding-top: 10px;
-		padding-bottom: 10px;
-	}
-}
 
 
