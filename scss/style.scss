@@ -446,6 +446,60 @@
 	}
 }
 
+.bros {
+	padding: 0.6em 0 4.9em;
+	.container_center {
+		max-width: 85.6em;
+		@extend %clear_a;
+	}
+	.section__title {
+		font-size: 3em;
+		margin-bottom: 0.42em;
+	}
+	&__right {
+		float: right;
+		width: 46.6%;
+		padding-top: 4.5em;
+	}
+	&__sub {
+		font-size: 1.2em;
+		letter-spacing: 0.0001em;
+		margin-bottom: 1.1em;
+	}
+	&__bold {
+		max-width: 84%;
+		font-weight: 600;
+		font-size: 1.2em;
+		line-height: 1.6;
+		margin-left: -0.5em;
+	}
+	&__img {
+		overflow: hidden;
+		img {
+			display: block;
+			width: 36.5em;
+		}
+	}
+	@media (max-width: 767px) {
+		.section__title {
+			font-size: 24px;
+		}
+	    &__right {
+	    	float: none;
+	    	width: 100%;
+	    	text-align: center;
+	    	margin-bottom: 20px;
+	    }
+	    &__sub {
+	    	font-size: 14px;
+	    }
+	    &__bold {
+	    	font-size: 14px;
+	    	max-width: none;
+	    }
+	}
+}
+
 .registration {
 	background: url('../img/registr-bg.jpg') no-repeat center center;
 	background-size: cover;
@@ -467,6 +521,7 @@
 	    }
 	}
 }
+
 .form {
 	width: 27.3em;
 	margin: auto;
