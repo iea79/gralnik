@@ -447,27 +447,29 @@
 }
 
 .bros {
-	padding: 0.6em 0 4.9em;
+	padding: 1.6em 0 0;
 	.container_center {
-		max-width: 85.6em;
+		max-width: 121.6em;
 		@extend %clear_a;
 	}
 	.section__title {
 		font-size: 3em;
 		margin-bottom: 0.42em;
+		max-width: 84%;
 	}
 	&__right {
 		float: right;
-		width: 46.6%;
-		padding-top: 4.5em;
+		width: 44.9%;
+		padding-top: 2.9em;
 	}
 	&__sub {
 		font-size: 1.2em;
 		letter-spacing: 0.0001em;
 		margin-bottom: 1.1em;
+		// max-width: 80%;
 	}
 	&__bold {
-		max-width: 84%;
+		max-width: 60%;
 		font-weight: 600;
 		font-size: 1.2em;
 		line-height: 1.6;
@@ -477,12 +479,13 @@
 		overflow: hidden;
 		img {
 			display: block;
-			width: 36.5em;
+			width: 64.3em;
 		}
 	}
 	@media (max-width: 767px) {
 		.section__title {
 			font-size: 24px;
+			max-width: none;
 		}
 	    &__right {
 	    	float: none;
