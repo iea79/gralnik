@@ -58,17 +58,17 @@ $(document).ready(function() {
 		return false;
 	});
 
-	$('.video__preview').slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		arrows: false,
-		fade: true,
-		asNavFor: '.video__thumbs'
-	});
+	// $('.video__preview').slick({
+	// 	slidesToShow: 1,
+	// 	slidesToScroll: 1,
+	// 	arrows: false,
+	// 	fade: true,
+	// 	asNavFor: '.video__thumbs'
+	// });
 	$('.video__thumbs').slick({
 		slidesToShow: 5,
 		slidesToScroll: 1,
-		asNavFor: '.video__preview',
+		// asNavFor: '.video__preview',
 		arrows: false,
 		dots: true,
 		centerMode: true,
@@ -135,7 +135,7 @@ $(function () {
 
         $('.video__play, .video__prev').on('click', function () {
             // создаем iframe со включенной опцией autoplay
-            var videoId = $(this).closest('.youtube').attr('id');
+            var videoId = $(this).closest('.js-youtube').attr('id');
             var iframe_url = "https://www.youtube.com/embed/" + videoId + "?autoplay=1&autohide=1";
             if ($(this).data('params')) iframe_url += '&' + $(this).data('params');
 
